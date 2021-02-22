@@ -1,5 +1,4 @@
 # editor
-.gradle
 .idea
 
 # npm
@@ -10,6 +9,7 @@ package-error.log
 yarn-error.log
 
 # kotlin
+.gradle
 build
 
 # grpc
