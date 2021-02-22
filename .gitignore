@@ -1,0 +1,16 @@
+# editor
+.gradle
+.idea
+
+# npm
+node_modules
+package.lock
+yarn.lock
+package-error.log
+yarn-error.log
+
+# kotlin
+build
+
+# grpc
+client-typescript/generated

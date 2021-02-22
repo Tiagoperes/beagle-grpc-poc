@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "paths": {
+      "grpc/*": ["./generated/*"]
+    }
+  },
+  "include": ["./src", "./generated"],
+  "exclude": ["./node_modules"]
+}
