@@ -16,7 +16,7 @@ private fun buildDataContext(context: Map<String, Any>): Messages.DataContext {
 }
 
 private fun serializeNodeAttributes(jsonMap: MutableMap<String, Any>): Map<String, Any> {
-    val skip = listOf("_beagleComponent_", "context", "id", "style", "children")
+    val skip = listOf("_beagleComponent_", "context", "id", "style", "children", "child")
     val attributes = HashMap<String, Any>()
     jsonMap.forEach() {
         if (!skip.contains(it.key)) attributes[it.key] = it.value
