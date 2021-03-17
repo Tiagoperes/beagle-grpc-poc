@@ -5,7 +5,6 @@ import { BeagleUIElement } from '@zup-it/beagle-web'
 async function getView(name: string, client: ScreenControllerClient) {
   const request = new ScreenRequest()
   request.setName(name)
-  request.setParameters(JSON.stringify({ a: 1, b: '2', c: true }))
   return new Promise<ViewNode>((resolve, reject) => {
     client.getScreen(request, (error, response) => {
       if (error) reject(error)

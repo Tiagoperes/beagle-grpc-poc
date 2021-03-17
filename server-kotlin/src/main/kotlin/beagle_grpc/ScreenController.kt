@@ -7,10 +7,8 @@ import com.fasterxml.jackson.core.JacksonException
 import io.grpc.Status
 import io.grpc.StatusException
 
-// fixme: can we have a type here instead of returning Any?
-typealias ViewBuilder = (parameters: Map<String, Any>, headers: Map<String, String>) -> Any
-
 open class ScreenController : ScreenControllerGrpcKt.ScreenControllerCoroutineImplBase() {
+    // fixme: can we return a real type instead of Any?
     open suspend fun getScreenByName(name: String, parameters: Map<String, Any>, headers: Map<String, String>): Any {
         throw StatusException(
             Status.UNIMPLEMENTED.withDescription(
